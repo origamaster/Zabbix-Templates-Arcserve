@@ -10,3 +10,7 @@ UserParameter=jobs.status,cscript //NoLogo C:\scripts\jobs_status.vbs
 
 OBS: If you get " timeout while executing a shell script" error on item,
 add Timeout=15 bellow userparameter addded on zabbix_agentd.conf
+
+OBS2: For this to work your ca_qmrg needs to be installed on the default path for windows,
+otherwise, you'll need to change the line bellow with your default path for ca_qmrg 
+Set ObjExec = objShell.Exec("""C:\Program Files (x86)\CA\ARCserve Backup\ca_qmgr.exe"" -list") <---- Change this line on vbscript
