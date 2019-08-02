@@ -1,0 +1,9 @@
+Input this userparameter on your zabbix_agentd.conf
+Put jobs_status.vbs script on C:\scripts (create the folder)
+Then reload your zabbix agent service
+Import Template
+Link Template to Host
+Done
+
+
+UserParameter=jobs.status,cscript //NoLogo C:\scripts\jobs_status.vbs
