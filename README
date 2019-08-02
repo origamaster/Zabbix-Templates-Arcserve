@@ -7,3 +7,6 @@ Done
 
 
 UserParameter=jobs.status,cscript //NoLogo C:\scripts\jobs_status.vbs
+
+OBS: If you get " timeout while executing a shell script" error on item,
+add Timeout=15 bellow userparameter addded on zabbix_agentd.conf
